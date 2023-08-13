@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="media\icons8-heart-48.png">
+</head>
+<body>
+  <br>
+    <header>
+        <h1>Project Management Tool</h1>
+    </header><br><br>
+    <main>
+      <h2 align="center">CREATE NEW TASK</h2>
+        <section class="task-form">
+
+            <form id="taskForm">
+                <label for="taskName">Task Name</label>
+                <input type="text" id="taskName" required>
+                <label for="assignee">Assign To</label>
+                <input type="text" id="assignee" required>
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate" required>
+                <div class="sub">
+                <button type="submit" id="submit">Create Task</button>
+              </div>
+            </form>
+        </section>
+      <h2 align="center">TASK LIST</h2>
+        <section class="task-list">
+
+            <ul id="taskList"></ul>
+        </section>
+      <h2 align="center">CHAT BOX</h2>
+
+        <div class="chat-container">
+          <div class="user-details">
+            <input type="text" id="name-input" placeholder="User Name" />
+          </div>
+          <div id="chat-messages"></div>
+  
+          <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Type your message..." />
+            <input type="submit" value="Send" />
+          </form>
+          <button id="clear-chat-button">Clear Chat</button>
+        </div>
+    </main><br><br>
+    <footer>
+      <p> <BR>COPYRIGHT @prathamraj</p>
+    </footer><br>
+    <script src="script.js"></script>
+</body>
+</html>

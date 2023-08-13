@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #E6E6E6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.task-form {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+}
+
+.task-list {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+#submit {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background= 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #F0F0F0;
+}
+
+.chat-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.user-message {
+  color: white;
+  background-color: #333;
+}
+
+.other-message {
+  color: black;
+  background-color: #E6E6E6;
+}
+
+.message input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-details {
+  margin-bottom: 10px;
+}
+
+.user-details input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.started {
+  color: white;
+  font-weight: bold;
+  background: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#clear-chat-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#clear-chat-button:hover {
+  background-color: #E63A2E;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+      padding: 1rem;
+  }
+}
